@@ -1,10 +1,5 @@
 \documentclass[10pt,a4paper,draft]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{makeidx}
-\usepackage{pshchelo}
 \bibliographystyle{unsrt}
 \usepackage[pdftex]{graphicx}
 
@@ -17,31 +12,38 @@
 \abstract{The bell like shape for vesicles sedimenting under the gravity predicted previousely was observed.
 The shape is in the agreement with the model given experimental parameters.
 However it was found to be unstable contrary to theoretical predictions.
-This instability may be attributed to thermal undulations of lipid mambrane.}
+This instability may be attributed to thermal undulations of lipid membrane.}
 
 \section{Introduction}\label{intro}
 Introduction
 
 \section{Materials and methods}\label{methods}
-\subsection{Vesicle preparation}
-Vesicles were prepared from DOPC by electroformation method \cite{Angelova1986} in 300~mM sucrose.
-Afterwards they were diluted with solution of 335~mM glucose + 0.01~mM NaCl to provide for density, osmolarity, conductivity and optical density contrast in the proportion of Vesicle solution to Glucose-NaCl solution as 1:10.
-This mix was then left for 15 min to sediment in the tube, separating bigger vesicles from the rest.
+\subsection{Vesicle preparation and observation}
+Vesicles were prepared from 1,2-dioleoyl-sn-glycero-3-phosphocholine \newline (DOPC) by electroformation method \cite{Angelova1986}.
+Shortly, 5~$\mu$m of 4~mM solution of DOPC in chloroform (both \emph{Sigma-Aldrich Chemie GmbH, Steinheim, Germany}) were deposited on each of two ITO-covered glass slides (\emph{Sigma-Aldrich Co, St.Lois, USA}) and dried in desiccator at room temperature for 1 hour to evaporate the solvent.
+Afterwards they were assembled in the chamber using 2~mm thick Teflon spacer.
+The chamber was filled with 300~mM sucrose solution (\emph{Sigma-Aldrich Chemie GmbH, Steinheim, Germany}), sealed with silicone grease and subjected to AC field of 10~Hz at 3~V peak-to peak amplitude for the duration of 1 hour with the help of TGA1230 function generator (\emph{Thurlby Thandar Instruments, Huntingdon, UK}).
+The procedure was finished with applying the AC field of 5~Hz and peak-to-peak amplitude of 3.6~V for another 20 minutes to detach vesicles from the glass.
+Vesicles solution was then collected and diluted with solution of 335~mM glucose (\emph{Sigma-Aldrich Chemie GmbH, Steinheim, Germany}) and 0.01~mM NaCl (\emph{Fluka Chemie AG, Buchs, Switzerland}) in the proportion of vesicle solution to glucose-NaCl solution as 1:10 to provide for density, osmolarity, conductivity and optical density contrast .
+This mix was then left for 15~minutes to sediment in the tube, separating bigger vesicles from the rest.
 The final sample was collected form the bottom of the tube, and filled in the experimental chamber.
 After that the unsealed chamber was left to evaporate in the room conditions for another 15 minutes in order to slowly change the osmolarity contrast and thus gently deflate vesicles.
 Then the chamber was sealed.
+Deionized water provided by Millipore Simplicity system (\emph{EMD Millipore, Billerica, USA}) was used in all solutions.
+Vesicles were observed using tilted Olympus IX-70 microscope with Olympus LCPlanFI 40x objective and eco285M~VGE camera (\emph{SVS-VISTEK GmbH, Seefeld, Germany}) with final image resolution of 0.135~$mu$m per pixel in phase contrast mode. Experiments were carried out using in-house developed LabVIEW software for image acquisition. Images were saved with exposure time of 100~ms at frame rate of 9.9 per second.
 
 \subsection{Electrodeformation of sedimenting vesicles}
-In order to obtain initial condition for sedimenting vesicles as oblate ellipsoid we used method of electrodefirmation in the AC field utilizing effect described in \cite{Aranda2008}.
-We used a custom made chamber.
-By using the AC field of frequency 100~kHz and the geometry of our chamber we were able to obtain the vesicles with oblate shape, with axis parallel to the gravity direction.
+In order to obtain initial condition for sedimenting vesicles as oblate ellipsoid we used method of electrodeformation in the AC field utilizing effect described in \cite{Aranda2008}.
+We used custom made Teflon chambers with cavity of ??x??x2 mm, with two parallel 1~mm{?} thick copper electrodes positioned with approximately 7~mm distance between them and close to the glass (see Figure{chamber}). The AC field was supplied through the TGA1230 generator and WM-300 high voltage amplifier (\emph{Falco Systems, Amsterdam, Netherlands}), the former being driven by in-house developed software \cite{pufuncgen}.
+Electrodeformation was achieved by applying the AC field of 130~V$_\mathrm{RMS}$ frequency of 100~kHz in pulses of 100~ms (to decrease magnetohydrodynamic effects).
 
 \section{Results}\label{results}
-The vesicles starting with oblate shape do indeed initially exhibit the bell-like shape when sedimenting as predicted in \cite{Boedec2012}.
-But it turns out that this morphology is not stable. After some time vesicles morph to pear-like shape (sometimes with pearling).
+By using pulses of AC field as described and the geometry of our chamber we were able to obtain the initial shape of sedimenting vesicle as oblate ellipsoid, with axis parallel to the gravity direction.
+Such vesicles do indeed initially exhibit the bell-like shape when sedimenting as predicted in \cite{Boedec2012}.
+But it turns out that this morphology is not stable. After some time vesicles morph to pear-like shape (most times followed by pearling).
 
 \section{Discussion}\label{discussion}
-The course of this change strongly suggests that thermal undulations of the membrane, which were not considered in the modelling of \cite{Boedec2012}, indeed play a crucial role, destabilizing the bell-like shape and making it a meta-stable morphology.
+The course of this change strongly suggests that thermal undulations of the membrane, which were not considered in the modelling of \cite{Boedec2012}, in fact play a crucial role, destabilizing the bell-like shape and making it a meta-stable morphology. Further refinement of the numerical model is needed to get insights into this transition.
 
 \bibliography{pshchelo}
 \end{document}

@@ -1,7 +1,11 @@
-\documentclass[10pt,a4paper,draft]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \bibliographystyle{unsrt}
 \usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+% next one for links to point to the figure/table,
+% not its caption
+\usepackage[hypcap]{caption}
 
 \begin{document}
 \author{Pavlo Shchelokovskyy}
@@ -46,9 +50,15 @@ Experiments were carried out using in-house developed LabVIEW software for image
 \subsection{Electrodeformation of sedimenting vesicles}
 
 In order to obtain initial condition for sedimenting vesicles as oblate ellipsoid we used method of electrodeformation in the AC field utilizing effect described in \cite{Aranda2008}.
-We used custom made Teflon chambers with cavity of 10x5x2 mm and two parallel 0.8~mm thick copper electrodes positioned with approximately 7~mm distance between them and close to the glass (see Figure{chamber}).
+We used custom made Teflon chambers with cavity of 10x5x2~mm and two parallel 0.8~mm thick copper electrodes positioned with approximately 7~mm distance between them and close to the glass (see Figure~\ref{fig:chamber}).
 The AC field was supplied through the TGA1230 generator and WM-300 high voltage amplifier (\emph{Falco Systems, Amsterdam, Netherlands}), the former being driven by in-house developed software.
 Electrodeformation was achieved by applying the AC field of approx. 130~V$_\mathrm{RMS}$ amplitude and frequency of 100~kHz in pulses of 100~ms (to decrease magnetohydrodynamic effects).
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.7\linewidth]{figs/electro-chamber}
+ \caption{Photo of the electrodeformation chamber.}\label{fig:chamber}
+\end{figure}
 
 \subsection{Image analysis}
 The recorded images were analysed to extract the contour of the vesicle using ImageJ software \cite{ImageJ}.
